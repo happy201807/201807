@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Welcome to Cloudzy! MikroticOS will be installed on your Ubuntu20.00 LTS VPS in a few seconds :)"
-wget https://download.mikrotik.com/routeros/7.10.2/chr-7.10.2.img.zip -O chr.img.zip  && \
+wget https://download.mikrotik.com/routeros/7.11.2/chr-7.11.2.img.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 mount -o loop,offset=33571840 chr.img /mnt && \
 ADDRESS=`ip addr show ens3 | grep global | cut -d' ' -f 6 | head -n 1` && \
@@ -12,7 +12,7 @@ echo "/ip address add address=$ADDRESS interface=[/interface ethernet find where
  " > /mnt/rw/autorun.scr && \
 umount /mnt && \
 echo u > /proc/sysrq-trigger && \
-dd if=chr.img bs=1024 of=/dev/vda iflag=fullblock && \
+dd if=chr.img bs=1024 of=/dev/vda && \
 echo "sync disk" && \
 echo s > /proc/sysrq-trigger && \
 echo "Sleep 5 seconds" && \
