@@ -1,7 +1,10 @@
 tls://8888.google
+tls://8.8.8.8
 tls://1.1.1.1
 tls://dot-jp.blahdns.com
 tls://jp.tiar.app
+quic://dot-jp.blahdns.com:784
+
 
 
 27.0.0.0/8
