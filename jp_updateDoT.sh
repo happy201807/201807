@@ -3,9 +3,8 @@ tls://8.8.8.8
 tls://1.1.1.1
 tls://dot-jp.blahdns.com
 tls://jp.tiar.app
-quic://dot-jp.blahdns.com:784
-
-
+tls://anycast.dns.nextdns.io
+tls://185.222.222.222
 
 27.0.0.0/8
 39.0.0.0/8
