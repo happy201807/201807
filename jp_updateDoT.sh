@@ -6,6 +6,7 @@ tls://jp.tiar.app
 tls://anycast.dns.nextdns.io
 tls://185.222.222.222
 
+:53
 27.0.0.0/8
 39.0.0.0/8
 60.0.0.0/8
@@ -17,3 +18,10 @@ tls://185.222.222.222
 
 122.121.0.0/16
 myIP/32  #myIP
+
+:443
+
+sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
+
+
+
