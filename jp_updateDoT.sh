@@ -19,9 +19,26 @@ tls://185.222.222.222
 122.121.0.0/16
 myIP/32  #myIP
 
-:443
-
+# dnscrypt
+wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
 
+config
+stop
 
+wget https://github.com/ameshkov/dnscrypt/releases/download/v2.2.7/dnscrypt-linux-amd64-v2.2.7.tar.gz
 
+tar -f ./dnscrypt-linux-amd64-v2.2.7.tar.gz -v -x -z
+
+cd ./linux-amd64/
+
+./dnscrypt generate --provider-name '2.dnscrypt-cert.example.org'\
+    --out ./dnscrypt.yaml
+
+nano AdGuardHome.yaml
+
+start
+
+nano dnscrypt.yaml cp public key to Tomato
+
+    
