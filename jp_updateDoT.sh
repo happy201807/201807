@@ -30,7 +30,7 @@ wget https://github.com/ameshkov/dnscrypt/releases/download/v2.2.7/dnscrypt-linu
 
 tar -f ./dnscrypt-linux-amd64-v2.2.7.tar.gz -v -x -z
 
-cd ./linux-amd64/
+cd ./linux-amd64/   cp dnscrypt /opt/AdGuardHome
 
 ./dnscrypt generate --provider-name '2.dnscrypt-cert.example.org'\
     --out ./dnscrypt.yaml
