@@ -1,5 +1,5 @@
 tls://8888.google
-tls://dot-jp.blahdns.com
+
 tls://jp.tiar.app
 tls://185.222.222.222
 
