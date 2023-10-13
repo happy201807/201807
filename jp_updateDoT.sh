@@ -16,6 +16,23 @@ tls://185.222.222.222
 122.121.0.0/16
 myIP/32  #myIP
 
+adblock
+
+AdGuard DNS filter
+CHN: AdRules DNS List
+CHN: anti-AD
+
+https://easylist.to/easylist/easylist.txt
+https://easylist.to/easylist/easyprivacy.txt
+https://easylist-downloads.adblockplus.org/easylistchina.txt
+https://secure.fanboy.co.nz/fanboy-annoyance.txt
+https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+
+
+
+
+
+
 # dnscrypt
 wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
