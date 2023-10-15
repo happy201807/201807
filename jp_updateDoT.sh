@@ -40,7 +40,7 @@ wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome
 sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
 
 config  manual 
-stop     sudo /opt/AdGuardHome/AdGuardHome -s stop
+stop     /opt/AdGuardHome/AdGuardHome -s stop
 
 wget https://github.com/ameshkov/dnscrypt/releases/download/v2.2.7/dnscrypt-linux-amd64-v2.2.7.tar.gz
 
@@ -55,7 +55,7 @@ cd /opt/AdGuardHome
 
 nano AdGuardHome.yaml
 
-start
+start     /opt/AdGuardHome/AdGuardHome -s start
 
 nano dnscrypt.yaml cp public key to Tomato
 
