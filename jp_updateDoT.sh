@@ -35,16 +35,20 @@ https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
 
 # dnscrypt
 wget --no-verbose -O - https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+
+
 sudo /opt/AdGuardHome/AdGuardHome -s start|stop|restart|status|install|uninstall
 
-config
-stop
+config  manual 
+stop     sudo /opt/AdGuardHome/AdGuardHome -s stop
 
 wget https://github.com/ameshkov/dnscrypt/releases/download/v2.2.7/dnscrypt-linux-amd64-v2.2.7.tar.gz
 
 tar -f ./dnscrypt-linux-amd64-v2.2.7.tar.gz -v -x -z
 
 cd ./linux-amd64/   cp dnscrypt /opt/AdGuardHome
+
+cd /opt/AdGuardHome
 
 ./dnscrypt generate --provider-name '2.dnscrypt-cert.example.org'\
     --out ./dnscrypt.yaml
