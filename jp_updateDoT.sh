@@ -64,7 +64,7 @@ nano dnscrypt.yaml cp public key to Tomato
 #  echo b > /proc/sysrq-trigger
 
 
-# /container/add remote-image=ubuntu:bionic interface=veth1 root-dir=disk1/ubuntu logging=yes
+# /container/add remote-image=ubuntu:bionic interface=veth1 logging=yes
 
 the container will add successfully but when i try to run , it will stop after a few seconds
 if i add
