@@ -3,7 +3,7 @@ tls://8888.google
 tls://jp.tiar.app
 tls://185.222.222.222
 
-:53
+ALLOW IP
 27.0.0.0/8
 39.0.0.0/8
 60.0.0.0/8
@@ -59,4 +59,7 @@ start     /opt/AdGuardHome/AdGuardHome -s start
 
 nano dnscrypt.yaml cp public key to Tomato
 
+
+
+#  echo b > /proc/sysrq-trigger
     
