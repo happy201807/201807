@@ -62,4 +62,21 @@ nano dnscrypt.yaml cp public key to Tomato
 
 
 #  echo b > /proc/sysrq-trigger
+
+
+# /container/add remote-image=ubuntu:bionic interface=veth1 root-dir=disk1/ubuntu logging=yes
+
+the container will add successfully but when i try to run , it will stop after a few seconds
+if i add
+Code: Select all
+
+# tail -f /dev/null
+
+in "cmd" field of container , it will not stop but there is no ssh access to it by ip of veth1
+also there is no log about container; even if I enable container topic in logging
+
+
+# /container/shell 0
+
+
     
