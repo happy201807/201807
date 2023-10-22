@@ -63,6 +63,9 @@ nano dnscrypt.yaml cp public key to Tomato
 
 #  echo b > /proc/sysrq-trigger
 
+# 443
+
+# /certificate enable-ssl-certificate dns-name=my.domain.com
 
 # /container/add remote-image=ubuntu:bionic interface=veth1 logging=yes
 
