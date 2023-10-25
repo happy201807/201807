@@ -1,5 +1,3 @@
-tls://8888.google
-
 tls://jp.tiar.app
 tls://185.222.222.222
 
