@@ -62,7 +62,17 @@ https://github.com/AdguardTeam/AdGuardHome/wiki/DNSCrypt
 
 
 
+
+
+
+
+
+
+
 #  echo b > /proc/sysrq-trigger
+
+
+
 
 # 443
 
