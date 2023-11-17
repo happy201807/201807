@@ -1,4 +1,4 @@
-tls://jp.tiar.app
+atls://jp.tiar.app
 tls://185.222.222.222
 
 ALLOW IP
@@ -49,7 +49,7 @@ cd ./linux-amd64/   cp dnscrypt /opt/AdGuardHome
 
 cd /opt/AdGuardHome
 
-./dnscrypt generate --provider-name '2.dnscrypt-cert.example.org'\
+./dnscrypt generate --provider-name '2.dnscrypt-cert.dqn.ddns.net'\
     --out ./dnscrypt.yaml
 
 nano AdGuardHome.yaml
