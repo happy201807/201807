@@ -78,7 +78,7 @@ in "cmd" field of container , it will not stop but there is no ssh access to it 
 also there is no log about container; even if I enable container topic in logging
 
 
-# /container/shell 0
+# /container/shell 0/1
 
 
     
