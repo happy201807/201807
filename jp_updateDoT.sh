@@ -58,6 +58,8 @@ start     /opt/AdGuardHome/AdGuardHome -s start
 
 nano dnscrypt.yaml cp public key to Tomato
 
+https://github.com/AdguardTeam/AdGuardHome/wiki/DNSCrypt
+
 
 
 #  echo b > /proc/sysrq-trigger
