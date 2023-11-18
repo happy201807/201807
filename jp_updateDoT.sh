@@ -1,4 +1,4 @@
-atls://jp.tiar.app
+tls://jp.tiar.app
 tls://185.222.222.222
 
 ALLOW IP
