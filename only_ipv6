@@ -1,12 +1,12 @@
 /ipv6 settings set forward=no
-/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::a/64
-/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::b/64
-/ipv6 route add distance=1 gateway=2001:b030:c11b:1500::1
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::a/64
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::b/64
+/ipv6 route add distance=1 gateway=2001:b030:c11b:15xx::1
 
 
 # 需要手动再次add address后才激活gateway
 
-/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::c/64
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::c/64
 
 然后  /system reboot
 y
