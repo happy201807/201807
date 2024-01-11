@@ -6,6 +6,7 @@
 
 # 需要手动再次add address后才激活gateway
 
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::c/64
 
 然后  /system reboot
 y
