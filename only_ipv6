@@ -14,4 +14,19 @@ y
 重启后正常了
 
 
-warp、DNS、route、激活、clock、NAT
+warp、DNS、route(warp)、license、clock、NAT
+
+e.g.
+
+[Interface]
+Address = 10.0.0.3/32
+DNS = 8.8.4.4
+MTU = 1280
+PrivateKey = 
+
+[Peer]
+AllowedIPs = 0.0.0.0/0, ::/0
+Endpoint = [2001]:2408
+PersistentKeepalive = 25
+PublicKey = 
+
