@@ -1,5 +1,6 @@
 /ipv6 settings set forward=no
 /ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::a/64
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:1500::b/64
 /ipv6 route add distance=1 gateway=2001:b030:c11b:1500::1
 
 
