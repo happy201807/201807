@@ -4,7 +4,7 @@
 /ipv6 route add distance=1 gateway=2001:b030:c11b:15xx::1
 
 
-# 需要手动再次add address后才激活gateway 多试几次Disable enable
+# 需要手动再次add address后才激活gateway 多试几次Disable/enable  remove::a
 
 /ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::c/64
 
