@@ -12,7 +12,7 @@ y
 
 # 1.等一下
 # 2.多试几次Disable/enable   [::a]  才激活gateway
-# 3.需要手动再次add address后才激活gateway 
+# 3.需要手动remove [::a]再次add address [::a] 才激活gateway 
 
 
 
