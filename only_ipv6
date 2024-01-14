@@ -1,17 +1,20 @@
 /ipv6 settings set forward=no
 /ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::a/64
 /ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::b/64
+/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::c/64
 /ipv6 route add distance=1 gateway=2001:b030:c11b:15xx::1
 
-
-# 1.多试几次Disable/enable  remove [::a]
-# 2.需要手动再次add address后才激活gateway 
-/ipv6 address add interface=ether1 advertise=no  address=2001:b030:c11b:15xx::c/64
 
 然后  /system reboot
 y
 
 重启后正常了
+
+# 1.等一下
+# 2.多试几次Disable/enable   [::a]  才激活gateway
+# 3.需要手动再次add address后才激活gateway 
+
+
 
 
 warp、DNS、route(warp)、license、clock、NAT
