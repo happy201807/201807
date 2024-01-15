@@ -1,1 +1,8 @@
-
+#自定义过滤规则
+/googleads.$~script,domain=~googleads.github.io
+/pagead/lvz?
+||google.com/pagead/
+||static.doubleclick.net^$domain=youtube.com
+||youtube.com/get_midroll_
+||safebrowsing.googleapis-cn.com
+||doubleclick.net
