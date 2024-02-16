@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Welcome to Cloudzy! MikroticOS will be installed on your VPS manual upload .zip in a few seconds :)"
+echo "Welcome to Cloudzy! MikroticOS will be installed on your VPS manual upload chr.img.zip in a few seconds :)"
 mount -o loop,offset=33571840 chr.img /mnt && \
 ADDRESS=`ip addr show eth0 | grep global | cut -d' ' -f 6 | head -n 1` && \
 GATEWAY=`ip route list | grep default | cut -d' ' -f 3` && \
